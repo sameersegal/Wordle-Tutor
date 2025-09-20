@@ -1,3 +1,6 @@
+# Wordle-Tutor specific files
+wordle_model_data.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
