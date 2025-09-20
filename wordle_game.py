@@ -126,6 +126,9 @@ class WordleGame:
     
     def _calculate_feedback(self, guess: str) -> List[str]:
         """Calculate feedback for each letter in the guess"""
+        if len(guess) != 5 or len(self.target_word) != 5:
+            return ["not_in_word"] * 5
+        
         feedback = []
         target_chars = list(self.target_word)
         guess_chars = list(guess)
